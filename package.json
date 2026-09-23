@@ -1,0 +1,37 @@
+{
+  "name": "@tahdeth/arab-form-zod",
+  "version": "4.0.5",
+  "description": "Arabic localization, phone validators, and ID schemas for Zod & React Hook Form",
+  "author": "Edrees Dbwon eng.edreesysf@gmail.com",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-hook-form": "^7.0.0",
+    "zod": "^3.0.0"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.9.1",
+    "@tahdeth/react-autodraft": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "react": "^18.3.1",
+    "react-hook-form": "^7.88.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "zod": "^3.22.4"
+  }
+}
